@@ -28,18 +28,18 @@ u12 = User.create(username: "player8", password: "password")
 
 puts "🌱 Seeding characters..."
 
-c1 = Character.create(name: "Marcus Dairy", race: "Human", class: "", level: 3, game_id: g1.id, user_id: u1.id)
-c2 = Character.create(name: "Sawyer Rose", race: "Elf", class: "", level: 8, game_id: g2.id, user_id: u2.id)
-c3 = Character.create(name: "Delta India Echo", race: "Elf", class: "", level: 6, game_id: g3.id, user_id: u3.id)
-c4 = Character.create(name: "Loren Michael", race: "Human", class: "", level: 5, game_id: g4.id, user_id: u4.id)
-c5 = Character.create(name: "Kilo Tango", race: "Dwarf", class: "", level: 5, game_id: g1.id, user_id: u5.id)
-c6 = Character.create(name: "Istaea", race: "Halfling", class: "", level: 4, game_id: g2.id, user_id: u6.id)
-c7 = Character.create(name: "Clockwork", race: "Elf", class: "", level: 6, game_id: g3.id, user_id: u1.id)
-c8 = Character.create(name: "Miss Yitsi", race: "Elf", class: "", level: 5, game_id: g4.id, user_id: u1.id)
-c9 = Character.create(name: "Canis Lupis", race: "Gnome", class: "", level: 8, game_id: g1.id, user_id: u2.id)
-c10 = Character.create(name: "Pocket Knight", race: "Halfling", class: "", level: 6, game_id: g2.id, user_id: u7.id)
-c11 = Character.create(name: "Nova", race: "Dragonborn", class: "", level: 5, game_id: g3.id, user_id: u4.id)
-c12 = Character.create(name: "Celeste", race: "Tiefling", class: "", level: 4, game_id: g4.id, user_id: u3.id)
+c1 = Character.create(name: "Marcus Dairy", race: "Human", character_class: "Druid", level: 3, game_id: g1.id, user_id: u1.id)
+c2 = Character.create(name: "Sawyer Rose", race: "Elf", character_class: "Sorcerer", level: 8, game_id: g2.id, user_id: u2.id)
+c3 = Character.create(name: "Delta India Echo", race: "Elf", character_class: "Rogue", level: 6, game_id: g3.id, user_id: u3.id)
+c4 = Character.create(name: "Loren Michael", race: "Human", character_class: "Cleric", level: 5, game_id: g4.id, user_id: u4.id)
+c5 = Character.create(name: "Kilo Tango", race: "Dwarf", character_class: "Barbarian", level: 5, game_id: g1.id, user_id: u5.id)
+c6 = Character.create(name: "Istaea", race: "Halfling", character_class: "Warlock", level: 4, game_id: g2.id, user_id: u6.id)
+c7 = Character.create(name: "Clockwork", race: "Elf", character_class: "Bard", level: 6, game_id: g3.id, user_id: u1.id)
+c8 = Character.create(name: "Miss Yitsi", race: "Elf", character_class: "Bard", level: 5, game_id: g4.id, user_id: u1.id)
+c9 = Character.create(name: "Canis Lupis", race: "Gnome", character_class: "Paladin", level: 8, game_id: g1.id, user_id: u2.id)
+c10 = Character.create(name: "Pocket Knight", race: "Halfling", character_class: "Fighter", level: 6, game_id: g2.id, user_id: u7.id)
+c11 = Character.create(name: "Nova", race: "Dragonborn", character_class: "Monk", level: 5, game_id: g3.id, user_id: u4.id)
+c12 = Character.create(name: "Celeste", race: "Tiefling", character_class: "Wizard", level: 4, game_id: g4.id, user_id: u3.id)
 
 
 puts "✅ Done seeding!"

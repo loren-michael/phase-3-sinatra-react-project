@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_25_042148) do
+ActiveRecord::Schema.define(version: 2022_09_29_172349) do
 
   create_table "characters", force: :cascade do |t|
     t.string "name"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2022_09_25_042148) do
     t.integer "level"
     t.integer "game_id"
     t.integer "user_id"
+    t.string "character_class"
     t.index ["game_id"], name: "index_characters_on_game_id"
     t.index ["user_id"], name: "index_characters_on_user_id"
   end
