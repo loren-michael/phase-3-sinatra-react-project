@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2022_09_30_021635) do
     t.string "game_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "img"
+    t.string "img_url"
   end
 
   create_table "users", force: :cascade do |t|

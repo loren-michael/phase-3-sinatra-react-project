@@ -5,10 +5,10 @@ User.destroy_all
 
 puts "🌱 Seeding games..."
 
-g1 = Game.create(game_name: "Curse of Strahd", img: "https://pbs.twimg.com/profile_images/734424981187092481/F70JnbDW_400x400.jpg")
-g2 = Game.create(game_name: "Dragon Heist", img: "https://styles.redditmedia.com/t5_2vbgl/styles/communityIcon_c329v6c343791.png")
-g3 = Game.create(game_name: "Tomb of Annihilation", img: "https://a.thumbs.redditmedia.com/Y78an_YcpDyfFf-Yu45zpfc_fgPYidK_kAhmdzfIV_0.png")
-g4 = Game.create(game_name: "Lost Mines of Phandelver", img: "https://www.dndbeyond.com/attachments/2/730/lmopcover.jpg")
+g1 = Game.create(game_name: "Curse of Strahd", img_url: "https://pbs.twimg.com/profile_images/734424981187092481/F70JnbDW_400x400.jpg")
+g2 = Game.create(game_name: "Dragon Heist", img_url: "https://styles.redditmedia.com/t5_2vbgl/styles/communityIcon_c329v6c343791.png")
+g3 = Game.create(game_name: "Tomb of Annihilation", img_url: "https://a.thumbs.redditmedia.com/Y78an_YcpDyfFf-Yu45zpfc_fgPYidK_kAhmdzfIV_0.png")
+g4 = Game.create(game_name: "Lost Mines of Phandelver", img_url: "https://www.dndbeyond.com/attachments/2/730/lmopcover.jpg")
 
 puts "🌱 Seeding users..."
 
