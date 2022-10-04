@@ -3,6 +3,12 @@ class UsersController < ApplicationController
     User.all.to_json
   end
 
+  # get '/:id' do
+  #   user = User.find_by_username(params[:id])
+  #   user.to_json
+  #   puts "Hello world"
+  # end
+
   get '/users/:id' do
     user = User.find_by_id(params[:id])
     if user
@@ -18,10 +24,9 @@ class UsersController < ApplicationController
     if exists
       { message: "This user already exists. Please log in." }
     else
-      user = User.create(
-      username: params[:username]
-    )
-    user.to_json
+      User.create(
+        username: params[:username]
+      ).to_json
     end
   end
   
