@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
     if user
       user.to_json
     else
-      { message: "user doesn't exist or you typed something wrong"}.to_json
+      { message: "user doesn't exist. please sign up."}.to_json
     end
   end
 end

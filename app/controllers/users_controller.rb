@@ -13,12 +13,16 @@ class UsersController < ApplicationController
   end
 
   post '/signup' do
-    user = User.new(params)
+    exists = User.find_by_username(params[:username])
 
-    if user.save
-      user.to_json
+    if exists
+      { message: "This user already exists. Please log in." }
     else
-      { message: user.errors.full_messages }.to_json
+      user = User.create(
+      username: params[:username]
+    )
+    user.to_json
     end
   end
+  
 end
