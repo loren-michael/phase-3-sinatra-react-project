@@ -1,3 +1,5 @@
+require 'pry'
+
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
@@ -6,22 +8,37 @@ class ApplicationController < Sinatra::Base
   #   users = User.all.to_json
   # end
 
-  get "/games" do
+  get '/games' do
     Game.all.to_json
   end
 
-  get "/characters" do
+  get '/characters' do
     Character.all.to_json
   end
 
-  get "/:id/games" do
-    user = User.find_by_username(params[:id])
+  get '/:id/games' do
+    user = User.find_by_id(params[:id])
+    # binding.pry
     user.games.all.to_json
   end
 
-  get "/:id/characters" do
-    user = User.find_by_username(params[:id])
+  get '/:id/characters' do
+    user = User.find_by_id(params[:id])
+    # binding.pry
     user.characters.all.to_json
+  end
+
+  post '/characters' do
+    char = Character.create(
+      name: params[:name],
+      race: params[:race],
+      level: params[:level],
+      character_class: params[:character_class],
+      icon: params[:icon],
+      game_id: nil,
+      user_id: params[:user_id],
+    );
+    char.to_json
   end
 
 end
