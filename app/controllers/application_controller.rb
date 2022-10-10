@@ -42,6 +42,7 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/characters/:id' do
+    # binding.pry
     char = Character.find(params[:id])
     char.update(level: params[:level])
   end
