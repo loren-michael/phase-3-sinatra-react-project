@@ -41,6 +41,11 @@ class ApplicationController < Sinatra::Base
     char.to_json
   end
 
+  patch '/characters/:id' do
+    char = Character.find(params[:id])
+    char.update(level: params[:level])
+  end
+
   delete '/characters/:id' do
     char = Character.find(params[:id])
     char.destroy;
