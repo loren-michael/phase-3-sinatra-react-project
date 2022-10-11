@@ -8,4 +8,5 @@ class SessionsController < ApplicationController
       { message: "this user does not exist."}.to_json
     end
   end
+
 end

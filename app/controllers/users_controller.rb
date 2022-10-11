@@ -3,12 +3,6 @@ class UsersController < ApplicationController
     User.all.to_json
   end
 
-  # get '/:id' do
-  #   user = User.find_by_username(params[:id])
-  #   user.to_json
-  #   puts "Hello world"
-  # end
-
   get '/users/:id' do
     user = User.find_by_id(params[:id])
     if user
