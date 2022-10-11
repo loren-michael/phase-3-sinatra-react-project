@@ -1,4 +1,4 @@
-# Loren's Phase 3 Project
+# Loren's Phase 3 Sinatra React Project
 ## Introduction
 
 The project contained in this and its sister repository were created to demonstrate knowledge of the Sinatra API backend that uses Active Record to access and persist data in the database that is found in this repo. The sister repository is a separate entity that uses React to interact with the database contained here.
@@ -8,9 +8,9 @@ The project contained in this and its sister repository were created to demonstr
 
 In order to use this application, you will need to clone both the frontend and backend repositories onto your machine. They are located here:
 
-[Frontend Repository Link]: https://github.com/loren-michael/phase-3-project-frontend
+[Frontend Repository Link](https://github.com/loren-michael/phase-3-project-frontend)
 
-[Backend Repository Link]: https://github.com/loren-michael/phase-3-sinatra-react-project
+[Backend Repository Link](https://github.com/loren-michael/phase-3-sinatra-react-project)
 
 ### Backend Setup
 
@@ -43,5 +43,5 @@ Once the application is up and running in your browser window, you will be able 
 
 ## Read More
 
-A blog post about the initial development of this application can be found [here]: https://dev.to/lorenmichael/creating-an-app-with-react-and-sinatra-loa
+A blog post about the initial development of this application can be found [here](https://dev.to/lorenmichael/creating-an-app-with-react-and-sinatra-loa)
 
