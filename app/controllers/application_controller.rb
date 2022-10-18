@@ -3,29 +3,20 @@ require 'pry'
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
-  # Add your routes here
-  # get "/" do
-  #   users = User.all.to_json
-  # end
-
   get '/games' do
     Game.all.to_json
   end
+  
+  post '/games' do
+    game = Game.create(
+      game_name: params[:game_name]
+    )
+    game.to_json
+  end
+
 
   get '/characters' do
     Character.all.to_json
-  end
-
-  get '/:id/games' do
-    user = User.find_by_id(params[:id])
-    # binding.pry
-    user.games.all.to_json
-  end
-
-  get '/:id/characters' do
-    user = User.find_by_id(params[:id])
-    # binding.pry
-    user.characters.all.to_json
   end
 
   post '/characters' do
@@ -36,7 +27,7 @@ class ApplicationController < Sinatra::Base
       character_class: params[:character_class],
       icon: params[:icon],
       game_id: nil,
-      user_id: params[:user_id],
+      user_id: params[:user_id]
     );
     char.to_json
   end

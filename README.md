@@ -25,7 +25,7 @@ This will run your server on port
 
 Then, you will need to make sure there is data seeded into your database. Do this by executing the following in your console:
 
-```
+```console
 $ bundle exec rake db:seed
 ```
 
@@ -43,5 +43,5 @@ Once the application is up and running in your browser window, you will be able 
 
 ## Read More
 
-A blog post about the initial development of this application can be found [here](https://dev.to/lorenmichael/creating-an-app-with-react-and-sinatra-loa)
+A blog post about the initial development of this application can be found [here](https://dev.to/lorenmichael/creating-an-app-with-react-and-sinatra-loa).
 
