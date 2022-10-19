@@ -16,7 +16,8 @@ class ApplicationController < Sinatra::Base
 
 
   get '/characters' do
-    Character.all.to_json
+    Character.includes(:user).to_json
+    # binding.pry
   end
 
   post '/characters' do

@@ -12,18 +12,14 @@ g4 = Game.create(game_name: "Lost Mines of Phandelver", img_url: "https://www.dn
 
 puts "🌱 Seeding users..."
 
-u1 = User.create(username: "socketface", password: "fishbowl")
-u2 = User.create(username: "username", password: "password")
-u3 = User.create(username: "dndplayer", password: "dndpassword")
-u4 = User.create(username: "timtom", password: "fishbowl")
-u5 = User.create(username: "player1", password: "password")
-u6 = User.create(username: "player2", password: "password")
-u7 = User.create(username: "player3", password: "password")
-u8 = User.create(username: "player4", password: "password")
-u9 = User.create(username: "player5", password: "password")
-u10 = User.create(username: "player6", password: "password")
-u11 = User.create(username: "player7", password: "password")
-u12 = User.create(username: "player8", password: "password")
+u1 = User.create(username: "player1", password: "fishbowl")
+u2 = User.create(username: "player2", password: "password")
+u3 = User.create(username: "player3", password: "dndpassword")
+u4 = User.create(username: "player4", password: "fishbowl")
+u5 = User.create(username: "player5", password: "password")
+u6 = User.create(username: "player6", password: "password")
+u7 = User.create(username: "player7", password: "password")
+u8 = User.create(username: "player8", password: "password")
 
 
 puts "🌱 Seeding characters..."
@@ -35,9 +31,9 @@ c4 = Character.create(name: "Loren Michael", race: "Human", character_class: "Cl
 c5 = Character.create(name: "Kilo Tango", race: "Dwarf", character_class: "Barbarian", icon: "https://www.dndbeyond.com/avatars/10/0/636336416778392507.jpeg", level: 5, game_id: g1.id, user_id: u5.id)
 c6 = Character.create(name: "Istaea", race: "Halfling", character_class: "Warlock", icon: "https://www.dndbeyond.com/avatars/10/12/636336422983071263.jpeg", level: 4, game_id: g2.id, user_id: u6.id)
 c7 = Character.create(name: "Clockwork", race: "Elf", character_class: "Bard", icon: "https://www.dndbeyond.com/avatars/10/1/636336416923635770.jpeg", level: 6, game_id: g3.id, user_id: u1.id)
-c8 = Character.create(name: "Miss Yitsi", race: "Elf", character_class: "Bard", icon: "https://www.dndbeyond.com/avatars/10/1/636336416923635770.jpeg", level: 5, game_id: g4.id, user_id: u1.id)
+c8 = Character.create(name: "Miss Yitsi", race: "Elf", character_class: "Bard", icon: "https://www.dndbeyond.com/avatars/10/1/636336416923635770.jpeg", level: 5, game_id: g4.id, user_id: u8.id)
 c9 = Character.create(name: "Canis Lupis", race: "Gnome", character_class: "Paladin", icon: "https://www.dndbeyond.com/avatars/10/6/636336417477714942.jpeg", level: 8, game_id: g1.id, user_id: u2.id)
-c10 = Character.create(name: "Pocket Knight", race: "Halfling", character_class: "Fighter", icon: "https://www.dndbeyond.com/avatars/10/4/636336417268495752.jpeg", level: 6, game_id: g2.id, user_id: u7.id)
+c10 = Character.create(name: "Pocket Knight", race: "Halfling", character_class: "Fighter", icon: "https://www.dndbeyond.com/avatars/10/4/636336417268495752.jpeg", level: 6, game_id: g2.id, user_id: u8.id)
 c11 = Character.create(name: "Nova", race: "Dragonborn", character_class: "Monk", icon: "https://www.dndbeyond.com/avatars/10/5/636336417372349522.jpeg", level: 5, game_id: g3.id, user_id: u4.id)
 c12 = Character.create(name: "Celeste", race: "Tiefling", character_class: "Wizard", icon: "https://www.dndbeyond.com/avatars/10/11/636336418370446635.jpeg", level: 4, game_id: g4.id, user_id: u3.id)
 

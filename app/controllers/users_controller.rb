@@ -2,8 +2,10 @@ require 'pry'
 
 class UsersController < ApplicationController
   get '/users' do
-    binding.pry
-    User.all.to_json
+    # binding.pry
+    users = User.all.includes(:characters)
+    # binding.pry
+    users.to_json(:include => :characters)
   end
 
   # get '/users/:id' do
