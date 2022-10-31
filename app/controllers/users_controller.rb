@@ -1,32 +1,31 @@
 require 'pry'
 
 class UsersController < ApplicationController
+
   get '/users' do
-    # binding.pry
     users = User.all.includes(:characters)
-    # binding.pry
-    users.to_json(:include => :characters)
+    users.to_json(:include => [:characters])
   end
 
-  # get '/users/:id' do
-  #   user = User.find_by_id(params[:id])
-  #   if user
-  #     user.to_json
-  #   else
-  #     { message: "no users found"}
-  #   end
+  post '/signup' do
+    exists = User.find_by_username(params[:username])
+    # binding.pry
+    if exists
+      { message: "This user already exists. Please log in." }
+    else
+      user = User.create(
+        username: params[:username]
+      )
+      User.all.to_json
+    end
+  end
+    # exists = User.find_by_username(params[:username])
+    # binding.pry
+    # if exists
+      # { message: "This user already exists. Please log in." }
+    # else
+      # User.new(params).to_json
+    # end
   # end
 
-  # post '/signup' do
-  #   exists = User.find_by_username(params[:username])
-
-  #   if exists
-  #     { message: "This user already exists. Please log in." }
-  #   else
-  #     User.create(
-  #       username: params[:username]
-  #     ).to_json
-  #   end
-  # end
-  
 end

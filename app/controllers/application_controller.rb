@@ -2,11 +2,11 @@ require 'pry'
 
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
-  
+
   get '/games' do
     Game.all.to_json
   end
-  
+
   post '/games' do
     game = Game.create(
       game_name: params[:game_name]
@@ -16,8 +16,8 @@ class ApplicationController < Sinatra::Base
 
 
   get '/characters' do
-    Character.includes(:user).to_json
-    # binding.pry
+      characters = Character.all.includes(:user)
+      characters.to_json(:include => [:user])
   end
 
   post '/characters' do
@@ -34,7 +34,6 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/characters/:id' do
-    # binding.pry
     char = Character.find(params[:id])
     char.update(level: params[:level])
   end

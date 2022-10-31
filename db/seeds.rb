@@ -33,7 +33,7 @@ c6 = Character.create(name: "Istaea", race: "Halfling", character_class: "Warloc
 c7 = Character.create(name: "Clockwork", race: "Elf", character_class: "Bard", icon: "https://www.dndbeyond.com/avatars/10/1/636336416923635770.jpeg", level: 6, game_id: g3.id, user_id: u1.id)
 c8 = Character.create(name: "Miss Yitsi", race: "Elf", character_class: "Bard", icon: "https://www.dndbeyond.com/avatars/10/1/636336416923635770.jpeg", level: 5, game_id: g4.id, user_id: u8.id)
 c9 = Character.create(name: "Canis Lupis", race: "Gnome", character_class: "Paladin", icon: "https://www.dndbeyond.com/avatars/10/6/636336417477714942.jpeg", level: 8, game_id: g1.id, user_id: u2.id)
-c10 = Character.create(name: "Pocket Knight", race: "Halfling", character_class: "Fighter", icon: "https://www.dndbeyond.com/avatars/10/4/636336417268495752.jpeg", level: 6, game_id: g2.id, user_id: u8.id)
+c10 = Character.create(name: "Pocket Knight", race: "Halfling", character_class: "Fighter", icon: "https://www.dndbeyond.com/avatars/10/4/636336417268495752.jpeg", level: 6, game_id: g2.id, user_id: u7.id)
 c11 = Character.create(name: "Nova", race: "Dragonborn", character_class: "Monk", icon: "https://www.dndbeyond.com/avatars/10/5/636336417372349522.jpeg", level: 5, game_id: g3.id, user_id: u4.id)
 c12 = Character.create(name: "Celeste", race: "Tiefling", character_class: "Wizard", icon: "https://www.dndbeyond.com/avatars/10/11/636336418370446635.jpeg", level: 4, game_id: g4.id, user_id: u3.id)
 
