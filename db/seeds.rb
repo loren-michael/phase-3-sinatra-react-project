@@ -12,10 +12,10 @@ g4 = Game.create(game_name: "Lost Mines of Phandelver", img_url: "https://www.dn
 
 puts "🌱 Seeding users..."
 
-u1 = User.create(username: "player1")
-u2 = User.create(username: "player2")
-u3 = User.create(username: "player3")
-u4 = User.create(username: "player4")
+u1 = User.create(username: "Player1")
+u2 = User.create(username: "Player2")
+u3 = User.create(username: "Player3")
+u4 = User.create(username: "Player4")
 
 
 

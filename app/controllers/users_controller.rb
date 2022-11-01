@@ -8,24 +8,16 @@ class UsersController < ApplicationController
   end
 
   post '/signup' do
-    exists = User.find_by_username(params[:username])
-    # binding.pry
-    if exists
-      { message: "This user already exists. Please log in." }
+    userExists = User.find_by_username(params[:username])
+    if userExists
+      { message: "This user already exists. Please log in." }.to_json
     else
-      user = User.create(
+      User.create(
         username: params[:username]
       )
-      User.all.to_json
+      userRefresh = User.all.includes(:characters)
+      userRefresh.to_json(:include => [:characters])
     end
   end
-    # exists = User.find_by_username(params[:username])
-    # binding.pry
-    # if exists
-      # { message: "This user already exists. Please log in." }
-    # else
-      # User.new(params).to_json
-    # end
-  # end
 
 end

@@ -27,9 +27,8 @@ class ApplicationController < Sinatra::Base
       level: params[:level],
       character_class: params[:character_class],
       icon: params[:icon],
-      game_id: nil,
       user_id: params[:user_id]
-    );
+    )
     char.to_json
   end
 
