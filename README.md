@@ -41,8 +41,6 @@ This will run your server on port
 
 
 
-
-
 ### Frontend Setup
 
 Now that your Backend is up and running and the database is seeded, we can get your React Frontend communicating to it. Navigate to the directory for the Frontend and start the application with: 
